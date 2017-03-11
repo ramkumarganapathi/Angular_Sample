@@ -1,0 +1,27 @@
+{
+  "name": "angular-self-study",
+  "version": "1.0.0",
+  "description": "Angular1.X self study",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramkumarganapathi/todoApp.git"
+  },
+  "keywords": [
+    "angularjs",
+    "angularselfstudy"
+  ],
+  "author": "Ramkumar Ganapathi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramkumarganapathi/todoApp/issues"
+  },
+  "homepage": "https://github.com/ramkumarganapathi/todoApp#readme",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3"
+  }
+}
