@@ -20,13 +20,11 @@
 (function() {
 var app = angular.module("todoApp");
 
-app.controller("LoginController",function($scope, LoginService, $location){
-	var vm = this;
-	vm.username = "";
-	vm.password = "";
-	vm.login = function() {   	
-    	LoginService.login().then(function(result){
-    		$location.path("/main");
+app.controller("TableController",function($scope, TableService, $location){
+	
+	$scope.createTable = function() {   	
+    	TableService.createTable().then(function(result){
+    		$scope.data = result;
     	},
     	function(error){
     		alert(error);

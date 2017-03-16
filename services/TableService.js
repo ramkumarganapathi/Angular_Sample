@@ -1,14 +1,16 @@
 var app = angular.module("todoApp");
 
-app.service("LoginService",function($http,$q){
+app.service("TableService",function($http,$q){
 	var vm = this;
 	this.success=false;
 	this.error = null;
 	
 	var status = $q.defer();
-this.login = function(){
+this.createTable = function(){
+alert('Prabha');
 	  $http({	       
-	        url : "api/login.json"
+	        url : "api/package.json",
+			responseType:'json'
 	        
 	    }).then(function mySucces(response) {
 	       status.resolve(response.data);
