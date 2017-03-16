@@ -1,4 +1,4 @@
-# Angular group Study Application
+# Learn AngularJS
 - It covers important concepts
 
 ## How to use this App
