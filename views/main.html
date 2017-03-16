@@ -11,7 +11,7 @@
         <div>
             <input type="text" ng-model="tdCtrl.listName" />
             <button ng-click="tdCtrl.addToList()">Add</button>
-            <p ng-repeat="item in tdCtrl.items"> {{item}}</p>
+            <p ng-repeat="item in tdCtrl.items track by $index"> {{item}}</p>
         </div>
         <div ng-if="tdCtrl.isShowDiv"> div1</div>
         <button ng-click="tdCtrl.isShowDiv=true"> show </button>
