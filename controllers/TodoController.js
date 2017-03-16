@@ -14,13 +14,11 @@
             console.log("print it" + s);
         };
         vm.addToList = function() {
-
             if (service.isValidItem(vm.listName, printFunc)) {
                 vm.items.push(vm.listName);
                 vm.listName = "";
                 console.log(vm.items);
             }
         }
-
     }
 })();

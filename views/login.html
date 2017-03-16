@@ -1,9 +1,15 @@
-
-
-<div ng-controller="LoginController as lgCtrl">
-
- <input type="text" ng-model="lgCtrl.username" />
-  <input type="text" ng-model="lgCtrl.password" />
-  <button ng-click="lgCtrl.login()">login</button>
-
+<div class="wrapper" ng-controller="LoginController as lgCtrl">
+    <div class="row">
+        <div class="col-md-4 ">&nbsp</div>
+        <div class="col-md-4">
+            <form class="form-signin">
+                <h2 class="form-signin-heading">Please login</h2>
+                <input type="text" class="form-control" name="username" placeholder="Enter username" ng-model="lgCtrl.username" required="" autofocus="" />
+                <input type="password" class="form-control" name="password" placeholder="Enter password" ng-model="lgCtrl.password" required="" />
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" ng-click="lgCtrl.login()" type="submit">Login</button>
+            </form>
+        </div>
+        <div class="col-md-4 ">&nbsp</div>
+    </div>
 </div>

@@ -7,17 +7,17 @@
 
     function config($routeProvider) {
         $routeProvider
-        .when('/', {
-        	templateUrl : './views/login.html'
-        })
-        .when('/main', {
-        	templateUrl : './views/main.html'
-        })
+            .when('/', {
+                templateUrl: './views/login.html'
+            })
+            .when('/main', {
+                templateUrl: './views/main.html'
+            })
             .when('/page1', {
-            	templateUrl : './views/page1.html'
+                templateUrl: './views/page1.html'
             })
             .when('/page2', {
-            	templateUrl : './views/page2.html'
+                templateUrl: './views/page2.html'
             });
     }
 
